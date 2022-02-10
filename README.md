@@ -1,4 +1,4 @@
-Website for HC Educates 2.0.
+# HackClash 2022
 
 ## Style guide
 * Use four spaces, not tabs.
