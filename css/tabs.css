@@ -1,0 +1,228 @@
+.prizes-container {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prizes-header{
+    width: 100%;
+}
+.prizes-container .section-heading-schedule{
+    margin-left: 0;
+}
+.prizes-container .section-heading-schedule::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    width: 300px;
+    height: 20px;
+    background-color: red;
+    z-index: -1;
+    left: 15%;
+  }
+  .prizes-container .section-heading-text{
+      padding-left: 15%;
+  }
+.tabs {
+  width: 70%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Phantom Sans", sans-serif;
+  border: 7px solid #ffbe0a;
+  border-radius: 57px;
+  height: auto;
+  position: relative;
+  padding:1.5%;
+  padding-top: 0;
+  box-shadow:0 0 12px #ffbe0a;
+}
+.tabs h2 {
+  color: black;
+}
+.tabs > ul {
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 1px solid #ffffff;
+}
+.tabs .trigger {
+  list-style-type: none;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.tabs .trigger.active {
+  font-weight: 700;
+  background-color: black;
+  z-index: -1;
+}
+.tabs .content {
+  /* padding: 10px 20px; */
+  border-radius: 6px;
+  display: none;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  z-index: -1;
+}
+.tabs .content .text {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabs .content .text-content{
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+.tabs .content .trophy {
+  width: 40%;
+}
+.tabs .content .trophy img {
+  object-fit: cover;
+  width: 100%;
+}
+.tabs .content.active {
+  background: black;
+  display: flex;
+}
+
+@media screen and (max-width:1210px) {
+    .tabs .trigger{
+        font-size: 1rem;
+    }
+    .tabs .content.active .text-content {
+        font-size: 0.95rem;
+      }
+}
+
+@media screen and (max-width:910px) {
+    .tabs{
+        padding: 10px;
+        padding-top: 0;
+    }
+    .tabs > ul{
+        justify-content: center;
+    }
+    .tabs .trigger{
+        font-size: 0.78rem;
+        margin: 0;
+    }
+    .tabs .content.active .text-content {
+        font-size: 0.75rem;
+      }
+}
+
+@media screen and (max-width:710px) {
+    .tabs .content{
+        flex-direction: column;
+    }
+    .tabs .content .text{
+        order: 1;
+        width: 100%;
+    }
+    .tabs .content .text-content{
+        padding: 15px;
+    }
+    .tabs .content .trophy{
+        text-align: center;
+        width: 100%;
+    }
+    .tabs .content .trophy img{
+        width: 50%;
+    }
+    .tabs > ul{
+        width: 70%;
+    }
+    .tabs .trigger {
+        list-style-type: none;
+        padding: 5px;
+        margin: 3px 5px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 0.7rem;
+        white-space: nowrap;
+      }
+      .tabs .trigger.active {
+        font-weight: bolder;
+        background-color: black;
+        z-index: -1;
+      }
+      .prizes-container .section-heading-schedule::after {
+        content: "";
+        position: absolute;
+        top: 57px;
+        width: 260px;
+        height: 20px;
+        background-color: red;
+        z-index: -1;
+        left: 15%;
+      }
+}
+
+@media screen and (max-width:535px){
+    .tabs{
+        width: 90%;
+    }
+    .tabs > ul{
+        width: 100%;
+    }
+    .tabs .trigger{
+        font-size: 0.7rem;
+    }
+    .tabs .content .trophy{
+        z-index: -2 !important;
+    }
+    .tabs .content .trophy img{
+        width: 70%;
+    }
+    .tabs .content.active .text-content{
+        font-size: 0.7rem;
+        padding: 15px;
+    }
+    
+.prizes-container .section-heading-schedule::after {
+    content: "";
+    position: absolute;
+    top: 57px;
+    width: 260px;
+    height: 20px;
+    background-color: red;
+    z-index: -1;
+    left: 15%;
+  }
+  .tabs .trigger {
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width:430px){
+    .tabs ul{
+        padding-bottom: 5px;
+    }
+    .tabs .trigger {
+        font-size: 0.6rem;
+        padding: 0;
+        margin: 2px 5px;
+      }
+}
+@media screen and (max-width:340px){
+    .tabs .trigger {
+        font-size: 0.5rem;
+        padding: 0;
+        margin: 2px 3px;
+      }
+}
