@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
 }
 .prizes-header{
     width: 100%;
@@ -209,6 +210,11 @@
     font-size: 0.7rem;
     white-space: nowrap;
   }
+  .tabs .trigger.active{
+    transform: scale(1.1);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width:430px){
@@ -219,6 +225,11 @@
         font-size: 0.6rem;
         padding: 0;
         margin: 2px 5px;
+      }
+      .tabs .trigger.active{
+        transform: scale(1.1);
+        margin-left: 10px;
+        margin-right: 10px;
       }
 }
 @media screen and (max-width:340px){
