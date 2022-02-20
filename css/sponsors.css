@@ -1,0 +1,106 @@
+/* .image-gallery {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    margin: 4vw;
+}
+
+.column img {
+    margin: 0.5em;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+Above is CSS for flexbox image gallery
+Below is CSS assuming square grid of sponsors like the figma
+depending on actual sponsors can use either.
+*/
+
+.square {
+    float: left;
+    position: relative;
+    width: 35%;
+    padding-bottom: 20%;
+    margin: calc(5% / 3.5);
+    margin-left:10%;
+    border-radius: 10%;
+    border-style: solid;
+    border-color:#EE11C8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+img.pink_rect{
+    max-width: 40%;  
+    max-height: 55px;  
+    position: relative;
+    margin-left:68%;
+    margin-right:1%;
+    margin-top:4%
+  }
+
+img.pacman{
+    width: 30%;  
+    height:10%;
+    position: relative;
+    margin-left:68%;
+    margin-right:5%;
+    margin-top:4%
+  }  
+
+#sponsors > a {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sponsor1 {
+    background: url("../assets/img/CN_logo.jpeg");
+}
+
+.sponsor2 {
+    background: url("../assets/img/cake_logo.svg");
+}
+
+.sponsor3 {
+    background: url("../assets/img/DU_logo.jpg");
+}
+
+.sponsor4 {
+    background: url("../assets/img/Yi_logo.png");
+}
+
+#sponsors > a:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.15s;
+    box-shadow: 2px 2px 20px 4px #EE11C8;
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+    #sponsors > a:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
