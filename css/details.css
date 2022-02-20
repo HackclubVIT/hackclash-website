@@ -7,15 +7,17 @@
   background-position: right;
   background-size: contain;
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
 .swiper-button-prev {
   transform: rotate(180deg);
   left: 8%;
+  top:35%;
 }
 .swiper-button-next {
   right: 8%;
+  top:35%;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -46,7 +48,9 @@
   z-index: 1;
 }
 .details-container {
-  margin: 5rem auto;
+  margin-top:5rem;
+  height: auto;
+  margin-bottom: 0;
 }
 .swiper {
   position: relative;
@@ -107,6 +111,7 @@ li::marker {
   .details-container .details-header {
     margin: 2rem auto;
     margin-left: 10%;
+    margin-bottom: 0;
   }
   .details-container .section-heading-schedule::after {
     content: "";
