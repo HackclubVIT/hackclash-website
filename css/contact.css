@@ -56,3 +56,10 @@ img.reg_button {
     padding-top: 0;
     box-shadow:0 0 12px #67C7BF;
   }
+
+  @media screen and (max-aspect-ratio: 1/1) {
+    .disc, .mail, .hackclubvitc {
+      font-size: 100%;
+      margin-bottom: -3%;
+    }
+  }
